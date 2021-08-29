@@ -1,0 +1,156 @@
+.flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.brand_area {
+  margin-top: 2rem;
+  padding: 0 1rem;
+}
+.brand_area h1 {
+  font-weight: bolder;
+  width: 18.75rem;
+  max-width: 25rem;
+  font-size: 2rem;
+}
+.span_curve {
+  display: block;
+  position: relative;
+}
+.span_curve::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 90%;
+  height: 30px;
+  top: 80%;
+  
+  border: 4px solid var(--primary);
+  border-color: var(--primary) transparent transparent transparent;
+  border-radius:  49% 51% 68% 32% / 49% 51% 68% 32%;
+}
+.award {
+  letter-spacing: 0.5rem;
+}
+.cta_hero {
+  font-size: 1.5em;
+  margin-top: 1rem;
+  margin-bottom: 3.125rem;
+}
+.cta_hero img {
+  width: 1.25rem;
+}
+
+.mission {
+    padding: 1rem;
+    background: var(--primary);
+}
+.mission > h2 {
+  color: var(--white);
+  font-weight: bold;
+}
+.mission > p {
+  max-width: clamp(300px, 80%, 100%);
+  margin-top: 0.25em;
+}
+.mission > button {
+  background-color: var(--white);
+  color: var(--black);
+  font-family: "Poppins", "Lato";
+  font-weight: bold;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  margin: .5rem 0;
+}
+.mission > button > div {
+  display: inline-block;
+  margin-left: -25%;
+  margin-right: 1rem;
+}
+.testimonials {
+    background-color: var(--gray-one);
+    height: 60%;
+}
+.contact_area {
+  height: 100vh;
+  background: var(--black);
+  color: var(--white);
+  padding: 1rem;
+  position: relative;
+}
+.contact_area > footer {
+  position: absolute;
+  width: 90%;
+  bottom: 5%;
+}
+.contact_area > footer  li {
+  list-style: none;
+  cursor: pointer;
+}
+.contact_area > footer li:hover {
+  color: dodgerblue;
+  text-decoration: underline;
+}
+.copy3 {
+  flex-basis: 50%;
+}
+.copy3 > h1 {
+  max-width: 10px;
+  margin-bottom: 3rem;
+}
+.contact_form  {
+  flex: 1;
+  margin-top: 2rem;
+}
+.form > input, .form select {
+  width: 100%;
+  display: block;
+  border-radius: 100px;
+  border: 0;
+  padding: .7rem 1rem;
+  outline: 0;
+}
+.form > input {
+  margin-bottom: .5rem;
+}
+.form button {
+  border: 1px solid var(--white);
+  background: transparent;
+  padding: .7rem 2rem;
+  margin: 1rem 0;
+}
+.form button:hover {
+  background: var(--white);
+  color: black;
+}
+
+@media screen and (min-width: 40rem) {
+  .brand_area {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 80vh;
+  }
+  .copy2 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .mission {
+    width: 50%;
+    padding: 2rem;
+  }
+  .testimonials {
+    width: 50%;
+  }
+  .form {
+    width: 60%;
+    font-size: 2rem;
+  }
+  .form input, .form select {
+    padding: 1.2rem;
+  }
+  .copy3 {
+    padding: 1rem;
+  }
+}

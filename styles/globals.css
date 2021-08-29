@@ -2,8 +2,11 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: "Poppins", apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    background: url('../assets/background.png');
+    background-size: 15rem;
+
 }
 
 a {
@@ -11,6 +14,26 @@ a {
   text-decoration: none;
 }
 
-* {
+*, *::before, *::after, h1, h2, h3, p, a, input, div {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
+
+:root {
+  --section-padding: 0.625rem;
+  --black: #000;
+  --primary: #0778E7;
+  --white: #fff;
+  --gray-one: #f1f1f1;
+  --font-normal: 16px;
+}
+button {
+  padding: .4em 2em;
+  background: var(--primary);
+  border-radius: 50px;
+  border: 0;
+  color: var(--white);
+  cursor: pointer;
+}
+

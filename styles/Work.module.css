@@ -1,0 +1,130 @@
+.project_area {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+}
+.work {
+    position: relative;
+}
+.project_intro {
+    flex: 0 1 40%;
+}
+.project_intro h2 {
+    width: 40%;
+}
+.project_intro p {
+    width: clamp(20rem, 25rem, 50rem);
+    margin-bottom: 1rem;
+}
+.span_curve {
+    display: inline-block;
+    position: relative;
+  }
+  .span_curve::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 20px;
+    top: 80%;
+    
+    border: 2px solid var(--primary);
+    border-color: var(--primary) transparent transparent transparent;
+    border-radius:  49% 51% 68% 32% / 49% 51% 68% 32%;
+  }
+.project_pics {
+    min-width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    grid-template-rows: repeat(4, 50px);
+    gap: 10px;
+}
+.box:nth-child(1) {
+    background: var(--gray-one);
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 2;
+}
+.box:nth-child(2) {
+    background: red;
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 2;
+    margin-top: 10px;
+
+}
+.box:nth-child(3) {
+    background: var(--primary);
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+}
+.box:nth-child(4) {
+    background: var(--black);
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 2;
+}
+.box:nth-child(5) {
+    background: var(--gray-one);
+}
+.top_rated {
+    padding: 1rem;
+}
+.pill {
+    font-weight: bold;
+    background-color: var(--primary);
+    width: fit-content;
+    border-radius: 200px;
+    padding: 0 .6em;
+    color: var(--white);
+}
+.details h2 {
+    font-size: 2rem;
+    margin-bottom: .5rem;
+}
+.details p {
+    margin-bottom: .5rem;
+}
+.footer {
+    position: absolute;
+    width: 100%;
+  }
+  .footer ul {
+      display: flex;
+      justify-content: space-around;
+  }
+.footer  li {
+    list-style: none;
+    cursor: pointer;
+    color: var(--primary);
+    font-weight: bold;
+  }
+ .footer li:hover {
+    color: dodgerblue;
+    text-decoration: underline;
+  }
+@media screen and (min-width: 40rem) {
+    .project_area {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0;
+    }
+    .top_rated {
+        display: flex;
+        justify-content: space-around;
+        padding: 2rem;
+    }
+    .details:first-child {
+        width: 50%;
+    }
+
+    .details > p:not(.pill) {
+        width: clamp(18.75rem, 26rem, 30rem);
+    }
+
+    .details + div {
+        width: 30%;
+    }
+    .project_pics {
+        min-width: 18rem;
+    }
+
+}

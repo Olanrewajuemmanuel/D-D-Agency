@@ -1,0 +1,6 @@
+{
+    "articles": [
+        {"id": 1, "title": "The lost Sheep", "author": "Williams Shearer"},
+        {"id": 2, "title": "The lost Sheep 2", "author": "Williams Shearer"}
+    ]
+}
