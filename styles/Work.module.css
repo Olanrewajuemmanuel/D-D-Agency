@@ -80,6 +80,7 @@
 .footer {
   width: 90%;
   margin-top: 10rem;
+  margin-bottom: 1rem;
 }
 .footer ul {
   display: flex;

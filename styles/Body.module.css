@@ -77,9 +77,8 @@
   position: relative;
 }
 .contact_area > footer {
-  position: absolute;
   width: 90%;
-  bottom: 2%;
+  margin-bottom: 1rem;
 }
 .contact_area > footer  li {
   list-style: none;
@@ -143,6 +142,7 @@
   }
   .testimonials {
     width: 50%;
+    height: 100%;
   }
   .form {
     width: 60%;
