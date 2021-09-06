@@ -36,4 +36,7 @@ button {
   color: var(--white);
   cursor: pointer;
 }
+button:hover {
+  opacity: .8;
+}
 

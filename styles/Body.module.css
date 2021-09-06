@@ -68,7 +68,7 @@
 }
 .testimonials {
     background-color: var(--gray-one);
-    height: 60%;
+    height: 18.75rem;
 }
 .contact_area {
   background: var(--black);
@@ -99,7 +99,7 @@
 .contact_form  {
   flex: 1;
   margin-top: 2rem;
-  margin-bottom: 3rem;
+  margin-bottom: 10rem;
 }
 .form > input, .form select {
   width: 100%;
