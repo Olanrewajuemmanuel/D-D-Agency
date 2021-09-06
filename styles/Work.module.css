@@ -70,7 +70,6 @@
 .pill {
     font-weight: bold;
     background-color: var(--primary);
-    width: fit-content;
     border-radius: 200px;
     padding: 0 .6em;
     color: var(--white);
