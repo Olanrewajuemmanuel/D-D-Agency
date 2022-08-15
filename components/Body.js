@@ -18,17 +18,13 @@ export default function Body() {
             <span className={styles.span_curve}>‘to make money’</span>
           </h1>
           <Link href="/work">
-             <button className={styles.cta_hero}>
-            <Image src={vectorSearch}></Image>
-            <Link href="/work"> Our Work</Link>
-          </button>
+            <button className={styles.cta_hero}>
+              <Image src={vectorSearch}></Image>
+              <Link href="/work"> Our Work</Link>
+            </button>
           </Link>
-         
         </div>
-
-        <div>
           <Image src={BrandImg} width="381" height="333"></Image>
-        </div>
       </div>
       {/* Brand area end */}
 
@@ -86,17 +82,6 @@ export default function Body() {
             </form>
           </div>
         </div>
-
-        <footer>
-          <div>
-            <ul className={styles.flex}>
-              <li>.Twitter</li>
-              <li>.dribbble</li>
-              <li>.Instagram</li>
-              <li>.LinkedIn</li>
-            </ul>
-          </div>
-        </footer>
       </div>
       {/**Contact area end */}
     </div>
