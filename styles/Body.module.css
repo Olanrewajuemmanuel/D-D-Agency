@@ -45,6 +45,7 @@
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
+  margin: 1rem 0;
 }
 .mission {
   padding: 1rem 4rem;
@@ -72,6 +73,7 @@
   background-color: var(--gray-one);
   width: 80%;
   min-height: 300px;
+  padding: 1rem;
 }
 .contact_area {
   height: 80vh;
