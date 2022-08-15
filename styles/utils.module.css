@@ -1,0 +1,27 @@
+.no_mobile {
+  display: none;
+}
+.ul_mobile_show {
+  position: absolute;
+  inset: 0 0 0 0;
+  background-color: var(--white);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  z-index: 3;
+}
+.ul_mobile_show > * {
+  margin: 2rem;
+}
+.ul_mobile_show > *:first-child {
+  margin-top: 10rem;
+}
+
+.position_relative {
+  position: relative;
+}
+.flex {
+  display: flex;
+  justify-content: space-around;
+}

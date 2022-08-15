@@ -1,0 +1,9 @@
+.footer {
+    background: var(--black);
+    color: var(--white);
+    padding: 2rem 1rem;
+    margin: auto 0;
+}
+.footer ul li {
+    list-style-type: square;
+}

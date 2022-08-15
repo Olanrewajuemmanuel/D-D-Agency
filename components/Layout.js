@@ -14,7 +14,7 @@ export default function Layout({ children }) {
       />
       </Head>
       <NavBar />
-      <div>{children}</div>
+      <div style={{ flexGrow: 1 }}>{children}</div>
       <Footer />
     </div>
   );
