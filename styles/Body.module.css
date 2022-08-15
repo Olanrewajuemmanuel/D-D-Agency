@@ -33,7 +33,7 @@
   font-size: 1.5em;
   margin-top: 1rem;
   margin-bottom: 3.125rem;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: space-evenly;
 }
@@ -41,18 +41,26 @@
   width: 1.25rem;
   margin: 0 1em;
 }
-
+.copy2 {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
 .mission {
-    padding: 1rem;
+    padding: 1rem 4rem;
+    min-height: 300px;
+    width: 100%;
     background: var(--primary);
 }
 .mission > h2 {
   color: var(--white);
   font-weight: bold;
+  font-size: 2rem;
 }
 .mission > p {
-  max-width: clamp(300px, 80%, 100%);
-  margin-top: 0.25em;
+  max-width: 80%;
+  margin: 0.5em 0;
+  color: var(--white);
 }
 .mission > button {
   background-color: var(--white);
@@ -60,16 +68,11 @@
   font-family: "Poppins", "Lato";
   font-weight: bold;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  margin: .5rem 0;
 }
-.mission > button > div {
-  display: inline-block;
-  margin-left: -25%;
-  margin-right: 1rem;
-}
+
 .testimonials {
     background-color: var(--gray-one);
-    height: 18.75rem;
+    width: 80%;
 }
 .contact_area {
   background: var(--black);
@@ -135,10 +138,10 @@
     font-size: 2rem;
   }
   .copy2 {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-around;
-    align-items: center;
+    flex-direction: column;
+  }
+  .copy2 > * {
+    width: 100% !important;
   }
   .mission {
     width: 50%;

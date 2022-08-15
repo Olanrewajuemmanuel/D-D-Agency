@@ -10,7 +10,7 @@ export default function Body() {
   return (
     <div className={styles.body}>
       {/* Brand area start */}
-      <div className={(styles.brand_area)}>
+      <div className={styles.brand_area}>
         <div>
           <p className={styles.award}>Award Winning agency</p>
           <h1>
@@ -19,12 +19,12 @@ export default function Body() {
           </h1>
           <Link href="/work">
             <button className={styles.cta_hero}>
-              <Image src={vectorSearch} alt='Search'></Image>
+              <Image src={vectorSearch} alt="Search"></Image>
               <p> Our work</p>
             </button>
           </Link>
         </div>
-          <Image src={BrandImg} width="381" height="333" alt='Hero image'></Image>
+        <Image src={BrandImg} width="381" height="333" alt="Hero image"></Image>
       </div>
       {/* Brand area end */}
 
@@ -38,19 +38,20 @@ export default function Body() {
             risus pharetra vel. Aliquam sed quis rutrum sagittis. Sed maecenas
             potenti hendrerit gravida.
           </p>
-          <button className={styles.cta_hero}>
-            <div>
+          {/* Get a quote btn */}
+          <Link href="/">
+            <button className={styles.cta_hero}>
               <Image
                 src={phone}
                 className={styles.vector}
                 width="50"
                 height="50"
-                id={styles.phone}
-                alt=''
+                alt=""
               ></Image>
-            </div>
-            <Link href="/">Get a quote</Link>
-          </button>
+              <p>Get a quote</p>
+            </button>
+          </Link>
+          {/*  btn end */}
         </div>
         <div className={styles.testimonials}>
           <Carousel />
@@ -64,7 +65,7 @@ export default function Body() {
           <div className={styles.copy3}>
             <h1>Let’s talk.</h1>
             <div>
-              <Image src={uiElement} width="150" height="150" alt=''></Image>
+              <Image src={uiElement} width="150" height="150" alt=""></Image>
             </div>
           </div>
           <div className={styles.contact_form}>
