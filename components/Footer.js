@@ -1,15 +1,16 @@
 import styles from '../styles/Footer.module.css'
 import utilStyles from '../styles/utils.module.css'
+import Link from 'next/link'
 
 export default function Footer() {
     return (
       <footer className={styles.footer}>
         <div>
           <ul className={utilStyles.flex}>
-            <li><a href="/">Twitter</a></li>
-            <li><a href="/">Dribble</a></li>
-            <li><a href="/">Instagram</a></li>
-            <li><a href="/">LinkedIn</a></li>
+            <li><Link href="/">Twitter</Link></li>
+            <li><Link href="/">Dribble</Link></li>
+            <li><Link href="/">Instagram</Link></li>
+            <li><Link href="/">LinkedIn</Link></li>
           </ul>
         </div>
       </footer>
