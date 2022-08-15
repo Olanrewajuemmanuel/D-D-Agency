@@ -61,7 +61,6 @@ export default function Body() {
 
       {/**Contact area start */}
       <div className={styles.contact_area}>
-        <div className={styles.flex}>
           <div className={styles.copy3}>
             <h1>Let’s talk.</h1>
             <div>
@@ -71,19 +70,24 @@ export default function Body() {
           <div className={styles.contact_form}>
             <form action="/" className={styles.form}>
               <label htmlFor="name">Name:</label>
-              <input type="text" name="email" />
+              <input type="text" name="text" placeholder="Your name" />
               <label htmlFor="email">Email:</label>
-              <input type="email" name="name" />
+              <input type="email" name="email" placeholder="Email Address..."/>
               <label htmlFor="services">What services may we render?:</label>
               <select name="services">
                 <option value="default" disabled>
-                  option
+                  Services
+                </option>
+                <option value="service">
+                  Service 1
+                </option>
+                <option value="service2">
+                  Service 2
                 </option>
               </select>
               <button type="submit">Submit</button>
             </form>
           </div>
-        </div>
       </div>
       {/**Contact area end */}
     </div>
