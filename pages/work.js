@@ -45,10 +45,10 @@ export default function OurWork() {
               ac dolor, nunc pellentesque integer.
             </p>
           </div>
-          <Image src={One}></Image>
+          <Image src={One} alt=''></Image>
         </div>
         <div className={styles.top_rated}>
-          <Image src={Two} className={styles.reverse}></Image>
+          <Image src={Two} className={styles.reverse} alt=''></Image>
           <div className={styles.details}>
             <p className={styles.pill}>Top-rated</p>
             <h2>Dribbble</h2>

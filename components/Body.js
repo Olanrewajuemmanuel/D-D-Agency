@@ -19,12 +19,12 @@ export default function Body() {
           </h1>
           <Link href="/work">
             <button className={styles.cta_hero}>
-              <Image src={vectorSearch}></Image>
-              <Link href="/work"> Our Work</Link>
+              <Image src={vectorSearch} alt=''></Image>
+              <b> Our Work</b>
             </button>
           </Link>
         </div>
-          <Image src={BrandImg} width="381" height="333"></Image>
+          <Image src={BrandImg} width="381" height="333" alt=''></Image>
       </div>
       {/* Brand area end */}
 
@@ -46,6 +46,7 @@ export default function Body() {
                 width="50"
                 height="50"
                 id={styles.phone}
+                alt=''
               ></Image>
             </div>
             <Link href="/">Get a quote</Link>
@@ -63,7 +64,7 @@ export default function Body() {
           <div className={styles.copy3}>
             <h1>Let’s talk.</h1>
             <div>
-              <Image src={uiElement} width="150" height="150"></Image>
+              <Image src={uiElement} width="150" height="150" alt=''></Image>
             </div>
           </div>
           <div className={styles.contact_form}>
