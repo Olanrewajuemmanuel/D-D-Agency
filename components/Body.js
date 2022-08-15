@@ -10,21 +10,21 @@ export default function Body() {
   return (
     <div className={styles.body}>
       {/* Brand area start */}
-      <div className={styles.brand_area}>
+      <div className={(styles.brand_area)}>
         <div>
-          <p className={(styles.text, styles.award)}>Award Winning agency</p>
+          <p className={styles.award}>Award Winning agency</p>
           <h1>
-            We help your business achieve its primary aim...
-            <span className={styles.span_curve}>‘to make money’</span>
+            We help your business achieve its primary aim of
+            <span className={styles.span_curve}>‘making money’</span>
           </h1>
           <Link href="/work">
             <button className={styles.cta_hero}>
-              <Image src={vectorSearch} alt=''></Image>
-              <b> Our Work</b>
+              <Image src={vectorSearch} alt='Search'></Image>
+              <p> Our work</p>
             </button>
           </Link>
         </div>
-          <Image src={BrandImg} width="381" height="333" alt=''></Image>
+          <Image src={BrandImg} width="381" height="333" alt='Hero image'></Image>
       </div>
       {/* Brand area end */}
 
